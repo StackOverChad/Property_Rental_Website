@@ -1,9 +1,10 @@
-# My Supabase Project
+# Property Rental Website
 
-[Brief description of your project, e.g., "A web application using Supabase for backend services and [Frontend Framework] for the UI."]
+This project is a comprehensive Property Rental & Sales Platform designed to connect landlords and tenants/buyers. Landlords can easily list their properties for rent or sale, providing details and images. Clients can browse these listings, filter by various criteria, and initiate contact to rent or purchase properties. The backend services, including user authentication, property data storage, and potentially real-time updates, are powered by Supabase, while the user interface is built with [React, Vue, Svelte with Vite and TypeScript].
+
 
 ## Prerequisites
-- Node.js (e.g., v18.x or later)
+- Node.js 
 - npm or yarn
 - Supabase CLI (if managing migrations/local dev with it): [https://supabase.com/docs/guides/cli](https://supabase.com/docs/guides/cli)
 
@@ -57,7 +58,7 @@
 
 ## Running the Application
 
-**Frontend (if separate from backend):**
+**Frontend **
 ```bash
 npm run dev
 # or
@@ -78,4 +79,3 @@ node server.js
 ##Project Structure
 1. src/: Frontend application source code
 2. supabase/: Supabase project configuration, migrations, edge functions
-3. routes/, models/, middleware/, healthcare-backend/: [Explain these if they are part of a custom backend separate from Supabase's direct client usage]
