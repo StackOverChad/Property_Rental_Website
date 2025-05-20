@@ -1,0 +1,62 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build output (if applicable, common for frontend/backend builds)
+dist/
+build/
+out/
+.svelte-kit/
+.next/
+# Add your specific build output folder if you have one
+
+# TypeScript cache/build files
+*.tsbuildinfo
+
+# Logs
+logs
+*.log
+lerna-debug.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Bolt specific (if .bolt is a local cache or build output)
+# If .bolt contains source code or necessary config you want versioned, DO NOT add it here.
+# If it's generated, cache, or build artifacts, then add it:
+.bolt/ 
+
+# Supabase specific
+# The supabase/ folder itself usually contains your migrations and config which *should* be versioned.
+# However, if supabase CLI generates local secrets or temporary files within it that aren't meant for version control,
+# you might need to add specific patterns here.
+# For example, if there's a supabase/.temp/ or supabase/secrets.local.toml:
+# supabase/.temp/
+# supabase/secrets.local.toml
+# supabase/functions/.env # If your Supabase functions have their own .env files
+# supabase/db/volumes/ # If you run Supabase locally with Docker and it stores data here
+
+# For now, let's assume the main supabase/migrations and supabase/config.toml are okay to commit.
+# Only add specific sub-paths of 'supabase/' if they contain generated or sensitive data.
+
+# Test coverage
+coverage/
+.nyc_output/
